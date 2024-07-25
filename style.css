@@ -16,17 +16,12 @@
     --other-color: #c3cad5;
 
     --h1-font: 4.5rem;
-    --h2-font: 2.9rem;
+    --h2-font: 2.5rem;
     --p-font: 1rem;
     --header-height: 70px;
 
 }
 
-/* body{
-    color: var(--text-color);
-    background: var(--bg-color);
-
-} */
 html, body {
     height: 100%;
     color: var(--text-color);
@@ -192,7 +187,6 @@ section{
     background: transparent;
     color: var(--main-color);
     border: 2px solid var(--main-color);
-    /* margin-left: 15px; */
     transition: all 0.5s ease;
     &:hover{
         background: var(--main-color);
@@ -280,6 +274,8 @@ section{
 }
 
 /* Portofolio */
+
+
 .portofolio{
     background: var(--second-bg-color);
     width: 100%;
@@ -291,6 +287,7 @@ section{
     align-items: center;
     gap: 2.3rem;
     margin-top: 4.2rem;
+    padding: 0 1rem;
 }
 
 .row img{
@@ -322,17 +319,21 @@ section{
 }
 
 .row h5{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     color: var(--other-color);
 }
-
+.row h4{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+}
 .row i{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     font-size: 27px;
     border-radius: 50%;
     color: var(--text-color);
@@ -343,12 +344,7 @@ section{
     }
 }
 
-.row h4{
-    font-size: 20px;
-    font-weight: 700;
-    /* margin-bottom: 10px; */
-    line-height: 1.4;
-}
+
 .portofolio-h4-court{
     margin-bottom: 24px;
 }
@@ -356,7 +352,6 @@ section{
 .row:hover{
     border: 1px solid var(--main-color);
     transform: translateY(-5px) scale(1.03);
-    /* cursor: pointer; */
 }
 
 /* Contact */
@@ -400,7 +395,6 @@ form .send-btn{
     font-size: 15px;
     font-weight: 600;
     transition: all 0.5s ease;
-    width: 30%;
     box-shadow: 0 0 5px var(--main-color);
 }
 form .send-btn:hover{
@@ -493,7 +487,15 @@ form .send-btn:hover{
     .about-compétences{
         padding-top: 20px;
     }
+    .portofolio-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+}
+@media (max-width: 1069px){
+    .portofolio-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 @media (max-width: 950px){
     :root{
@@ -524,6 +526,7 @@ form .send-btn:hover{
     .navlist.active{
         right: 0;
     }
+    
 }
 
 @media (max-width: 818px){
@@ -544,6 +547,9 @@ form .send-btn:hover{
     }
     .about-text p{
         margin: 0 50px 50px 50px;
+    }
+    .portofolio-content{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 @media (max-width: 470px){
