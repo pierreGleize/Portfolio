@@ -27,7 +27,7 @@ html, body {
     color: var(--text-color);
     background: var(--bg-color);
 }
- .about, .portofolio, .contact {
+ .about, .portfolio, .contact {
     min-height: 100vh; 
     width: 100%; 
     overflow-x: hidden;
@@ -273,15 +273,15 @@ section{
     font-size: var(--h2-font);
 }
 
-/* Portofolio */
+/* Portfolio */
 
 
-.portofolio{
+.portfolio{
     background: var(--second-bg-color);
     width: 100%;
 }
 
-.portofolio-content{
+.portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
@@ -345,7 +345,7 @@ section{
 }
 
 
-.portofolio-h4-court{
+.portfolio-h4-court{
     margin-bottom: 24px;
 }
 
@@ -487,13 +487,13 @@ form .send-btn:hover{
     .about-compétences{
         padding-top: 20px;
     }
-    .portofolio-content{
+    .portfolio-content{
         grid-template-columns: repeat(3, 1fr);
     }
 
 }
 @media (max-width: 1069px){
-    .portofolio-content{
+    .portfolio-content{
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -530,7 +530,7 @@ form .send-btn:hover{
 }
 
 @media (max-width: 818px){
-    .portofolio-h4-court{
+    .portfolio-h4-court{
         margin-bottom: 0px;
     }
     .about-text p{
@@ -548,7 +548,7 @@ form .send-btn:hover{
     .about-text p{
         margin: 0 50px 50px 50px;
     }
-    .portofolio-content{
+    .portfolio-content{
         grid-template-columns: repeat(1, 1fr);
     }
 }
