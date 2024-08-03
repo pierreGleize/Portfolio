@@ -14,7 +14,6 @@
     --second-bg-color: #22282f;
     --main-color: #13bbff;
     --other-color: #c3cad5;
-
     --h1-font: 4.5rem;
     --h2-font: 2.5rem;
     --p-font: 1rem;
@@ -37,7 +36,6 @@ section {
     min-height: 100vh;
     padding: 110px 16% 90px;
     width: 100%;
-    /* overflow-x: hidden; */
 }
 
 .header{
@@ -218,7 +216,8 @@ section{
     max-width: 530px;
     border-radius: 20px;
     box-shadow:  0 0 5px var(--main-color);
-    background: var(--second-bg-color);
+    /* background: var(--second-bg-color); */
+    background: linear-gradient(145deg, rgba(19,187,255,0.241421568627451) 0%, rgba(34,40,47,1) 69%);
     text-align: center;
 }
 
@@ -238,7 +237,6 @@ section{
 }
 .about-logo {
     text-align: center;
-    /* background: var(--bg-color); */
     transition: transform 0.3s ease;
 }
 .about-logo p{
@@ -301,12 +299,14 @@ section{
 }
 
 .row{
-    background: #2d343f;
+    /* background: #2d343f; */
     border-radius: 28px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     padding: 20px;
     transition:  all 0.5s ease;
+    background: linear-gradient(145deg, rgba(19,187,255,0.241421568627451) 0%, rgba(34,40,47,1) 69%);
+
 }
 
 
